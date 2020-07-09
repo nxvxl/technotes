@@ -7,7 +7,7 @@ title: Tech Notes
 subtitle: ''
 description: ''
 keywords:
-author: Mohammad noval M
+author: Mohammad Noval M
 language: en
 timezone: ''
 
@@ -99,3 +99,17 @@ theme: cactus
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: ''
+
+# Theme configuration
+theme_config:
+  colorscheme: dark
+  nav:
+    Home: /
+    Writing: /archives/
+    Projects: https://github.com/nxvxl
+  social_links:
+    github: https://github.com/nxvxl
+    twitter: https://twitter.com/nnnnoval
+    mail: mailto:noval.dev@protonmail.com
+  copyright:
+    start_year: 2020

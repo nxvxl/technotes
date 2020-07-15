@@ -1,10 +1,12 @@
-name: Build and Deploy
+name: Deploy to GitHub Pages
+
 on:
   push:
-    branches:
+    branches: 
       - master
+
 jobs:
-  build-and-deploy:
+  hexo-deploy-gh-pages:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -13,8 +15,4 @@ jobs:
     - name: Build and Deploy
       uses: nxvxl/hexo-deploy-action@master
       env:
-        PERSONAL_TOKEN: ${{ secrets.TOKEN }}
-        PUBLISH_REPOSITORY: nxvxl/technotes # The repository the action should deploy to.
-        BRANCH: gh-pages  # The branch the action should deploy to.
-        PUBLISH_DIR: ./public # The folder the action should deploy.
-
+        GIT_DEPLOY_KEY: ${{ secrets.GIT_DEPLOY_KEY }}

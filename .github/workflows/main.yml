@@ -13,6 +13,6 @@ jobs:
       uses: actions/checkout@master
 
     - name: Build and Deploy
-      uses: nxvxl/gh-actions-hexo-deploy-gh-pages
+      uses: nxvxl/gh-actions-hexo-deploy-gh-pages@master
       env:
         GIT_DEPLOY_KEY: ${{ secrets.GIT_DEPLOY_KEY }}

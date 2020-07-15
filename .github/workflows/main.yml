@@ -11,7 +11,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: Build and Deploy
-      uses: renzhaosy/hexo-deploy-action@master
+      uses: nxvxl/hexo-deploy-action@master
       env:
         PERSONAL_TOKEN: ${{ secrets.TOKEN }}
         PUBLISH_REPOSITORY: nxvxl/technotes # The repository the action should deploy to.

@@ -7,4 +7,4 @@ tags:
   - WSGI 
 ---
 
-Put `WSGIPassAutorization On` to `apache2.conf` or `.htaccess` or virtual host config.
+Put `WSGIPassAuthorization On` to `apache2.conf` or `.htaccess` or virtual host config.
